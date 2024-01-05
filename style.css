@@ -1,0 +1,135 @@
+header {
+    background-image: url(./imagenes/fondoDePantalla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0 0 1rem 0;
+}
+
+#logo {
+    height: 90px;
+    width: 100px;
+}
+
+#fotoPrin{
+    padding: 2rem;
+    margin: 0 6rem 2rem 6rem;
+    position: relative;
+    background-image: url('./fotos/imagenLargaHero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px; 
+}
+
+/**************************encabezado****************************/
+#encabezadoLinks{
+    margin: 0 6rem 2rem 6rem;
+    padding: 3rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+#listaDeNombres {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+
+
+@media (min-width: 891px) {
+#abrir, #botonParaCerrar{
+    visibility: hidden;
+}}
+
+
+
+/**********************************hambuerguesa***************************************/
+
+@media (max-width: 890px) {
+
+    #encabezadoLinks{
+        padding: 1rem 0rem 1rem 0rem;
+        margin: 0 2.5rem 0 2.5rem;
+        display: flex;
+        align-items: center;
+        
+    }
+    #nav {
+        position: absolute;
+        background-color: black;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        transition: 0.4s ;
+
+        opacity: 0;
+        visibility: hidden;
+
+        /*letras*/
+        color: white;
+        text-decoration: none;
+    }
+
+    #nav.visible {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.4s ;
+
+        z-index: 2;
+    }
+
+    #listaDeNombres {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #listaDeNombres>li {
+        padding: 1rem 0 0 0;
+    }
+
+    #listaDeNombres>#botonParaCerrar {
+        background-color: transparent;
+        color: #ffffff;
+        border: white 1px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .abrirMenu{
+        background-color: transparent;
+        color: black;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: auto;
+        
+    }
+    
+    #fotoPrin{
+        padding: 2rem;
+        margin: 0 2.5rem 2rem 2.5rem;
+        position: relative;
+        background-image: url('./fotos/imagenLargaHero.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 300px; 
+    }
+
+    
+
+    
+}
