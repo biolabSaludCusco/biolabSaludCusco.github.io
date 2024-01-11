@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gloria</title>
+    <title>BIOLAB</title>
 
     <script src="./jquery-3.7.1.min.js"></script>
 
@@ -59,28 +59,25 @@
 
                     <li>
                         <span class="material-symbols-outlined" style="text-decoration: none;"><a href="#fotoPrin"
-                                style="text-decoration: none; color: black;">Inicio</a></span>
+                                style="text-decoration: none; color: #9A80BF;">Inicio</a></span>
                     </li>
                     <li>
-                        <span class="material-symbols-outlined" style="text-decoration: none;">Habitaciones</span>
+                        <span class="material-symbols-outlined" style="text-decoration: none;"><a href="#quienesSomos"
+                            style="text-decoration: none; color: #9A80BF;">Quienes somos</a></span>
                     </li>
                     <li>
-                        <span class="material-symbols-outlined" style="text-decoration: none;"><a
-                                href="#tituloUbicacion"
-                                style="text-decoration: none; color: black;">Ubicacion</a></span>
+                        <span class="material-symbols-outlined" style="text-decoration: none;"><a href="#ubicacion"
+                                style="text-decoration: none; color: #9A80BF;">Ubicacion</a></span>
                     </li>
                     <li>
                         <span class="material-symbols-outlined" style="text-decoration: none;"><a
                                 href="#tituloExperiencias"
-                                style="text-decoration: none; color: black;">Experiencias</a></span>
-                    </li>
-                    <li>
-                        <span class="material-symbols-outlined" style="text-decoration: none;">Contacto</span>
+                                style="text-decoration: none; color: #9A80BF;">Experiencias</a></span>
                     </li>
                     <li>
                         <span class="material-symbols-outlined" style="text-decoration: none;"><a
                                 href="https://api.whatsapp.com/send?phone=952840633"
-                                style="text-decoration: none; color: black;">Reservar</a></span>
+                                style="text-decoration: none; color: #9A80BF;">Contactar</a></span>
                     </li>
                 </ul>
             </nav>
@@ -91,12 +88,12 @@
         <!--encabezado- imagen principal-->
         <div id="fotoPrin">
 
-            <h1>Tu casa fuera de casa</h1>
-            <p style="font-family: 'Abril Fatface', serif; color: white;">en el corazon de Cusco</p>
-            <button style="font-family: 'Abril Fatface', serif; color:#025E73;">Reservar ya</button>
+            <h1>Biolab Salud Cusco </h1>
+            <p style="font-family: 'Abril Fatface', serif; color: white;">laboratorio de confianza</p>
+            <button style="font-family: 'Abril Fatface', serif; color:#8FC4D9;">Contactanos</button>
 
             <ul class="flex-container nav-list" id="siguenos">
-                <p style="font-family: 'Abril Fatface', serif; color: white;" >Siguenos en</p>
+                <p style="font-family: 'Abril Fatface', serif; color: white;">Siguenos en</p>
                 <li><img src="./imagenes/instagram.png" alt="instagram" style="height: 2rem; width: 2rem;"></li>
                 <li><img src="./imagenes/facebook.png" alt="facebook" style="height: 2rem; width: 2rem;"></li>
             </ul>
@@ -106,171 +103,138 @@
 
 
 
+    <!--Quienes somos-->
+    <div class="flex-container" id="quienesSomos">
+        <div class="flex-container" id="tituloQuienesSomos">
+            <h2>Quienes somos</h2>
+        </div>
+        <div class="flex-container" id="contenedorQuienesSomos">
+            <div class="flex-container" id="presentacion">
+                <h3>Solange Chacon T.</h3>
+                <p>Medico tecnologa, egresada con honores de la prestigiosa Universidad Peruana Cayetano Heredia </p>
+                <p>Cumplimos con los requisitos mas altos de calidad y certificados de salud</p>
+
+                <div id="cetificadosDeSalud">
+                    <div id="target" class="slider2">
+
+                        <ul id="listaDeHabitaciones" class="flex-container">
+
+                            <li>
+                                <img src="./fotos/certificado-1.jpg" alt="certificados" class="imagenDeHabitacion">
+                            </li>
+                            <li>
+                                <img src="./fotos/certificado-2.jpg" alt="certificados" class="imagenDeHabitacion">
+                            </li>
+                            <li>
+                                <img src="./fotos/certificado-1.jpg" alt="certificados" class="imagenDeHabitacion">
+                            </li>
+                            <li>
+                                <img src="./fotos/certificado-2.jpg" alt="certificados" class="imagenDeHabitacion">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <img src="./fotos/fotoDePerfil.jpg" alt="fotoDePerfil">
+        </div>
+    </div>
 
 
-    <!--Habitaciones-->
+    <!--Examenes-->
 
     <div id="habitaciones" class="flex-container">
 
-        <h1 id="tituloHabitaciones">Habitaciones</h1>
-        <div id="carruselDeImagenes" class="flex-container">
+        <h1 id="tituloHabitaciones">Examenes</h1>
 
-            <div id="habitacionPresentacion">
-                <h3>Habitacion triple</h3>
 
-                <div id="target" class="slider">
-
-                    <ul id="listaDeHabitaciones" class="flex-container">
-                        <li>
-                            <img src="./fotos/triple-blanca-1.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
-                        </li>
-                        <li>
-                            <img src="./fotos/triple-blanca-2.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
-                        </li>
-                        <li>
-                            <img src="./fotos/triple-blanca-3.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
-                        </li>
-                        <li>
-                            <img src="./fotos/triple-blanca-B2.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
-                        </li>
-                    </ul>
-                </div>
-
-                <p id="descripcion"> Habitacion con mirador con vista a la ciudad, baño privado</p>
-                <!--iconos de servicios-->
-                <div id="servicios">
-
-                </div>
-                <button class="botonDeHabitacion">Ir a ver</button>
-            </div>
-
-            <div id="habitacionPresentacion">
-                <h3>Habitacion matrimonial</h3>
-
-                <div id="target" class="slider">
-
-                    <ul id="listaDeHabitaciones" class="flex-container">
-                        <li>
-                            <img src="./fotos/matrimonial-1.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
-                        </li>
-                        <li>
-                            <img src="./fotos/matrimonial-2.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
-                        </li>
-                        <li>
-                            <img src="./fotos/matrimonial-1.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
-                        </li>
-                        <li>
-                            <img src="./fotos/matrimonial-2.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
-                        </li>
-
-                    </ul>
-                </div>
-
-                <p id="descripcion"> Habitacion perfecta para parejas, privada y muy acogedora</p>
-                <!--iconos de servicios-->
-                <div id="servicios">
-
-                </div>
-                <button class="botonDeHabitacion">Ir a ver</button>
-            </div>
-
-            <div id="habitacionPresentacion">
-                <h3>Habitacion doble</h3>
-
-                <div id="target" class="slider">
-
-                    <ul id="listaDeHabitaciones" class="flex-container">
-                        <li>
-                            <img src="./fotos/doble-1.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
-                        </li>
-                        <li>
-                            <img src="./fotos/doble-2.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
-                        </li>
-                        <li>
-                            <img src="./fotos/doble-3.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
-                        </li>
-                        <li>
-                            <img src="./fotos/doble-B1.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
-                        </li>
-
-                    </ul>
-                </div>
-
-                <p id="descripcion"> Habitacion tranquila, con baño privado y balcon panoramico</p>
-                <!--iconos de servicios-->
-                <div id="servicios">
-
-                </div>
-                <button class="botonDeHabitacion">Ir a ver</button>
-            </div>
-
-        </div>
 
         <div id="carruselDeImagenes" class="flex-container">
 
             <div id="habitacionPresentacion">
-                <h3>Habitacion triple</h3>
+                <h3>Descartes</h3>
 
                 <div id="target" class="slider">
 
                     <ul id="listaDeHabitaciones" class="flex-container">
+
                         <li>
-                            <img src="./fotos/rosa-1.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
+                            <img src="./fotos/im.1.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
                         </li>
                         <li>
-                            <img src="./fotos/rosa-2.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
+                            <img src="./fotos/im.3.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
                         </li>
                         <li>
-                            <img src="./fotos/rosa-1.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
+                            <img src="./fotos/im.5.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
                         </li>
                         <li>
-                            <img src="./fotos/rosa-2.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
+                            <img src="./fotos/im.6.png" alt="imagenDeHabitacion" class="imagenDeHabitacion">
                         </li>
 
                     </ul>
                 </div>
 
-                <p id="descripcion"> Habitacion con mirador con vista a la ciudad</p>
+                <p id="descripcion"> Descartes de enfermedades</p>
                 <!--iconos de servicios-->
-                <div id="servicios">
 
-                </div>
-                <button class="botonDeHabitacion">Ir a ver</button>
+                <button class="botonDeHabitacion">Ver analisis</button>
             </div>
-
             <div id="habitacionPresentacion">
-                <h3>Habitacion doble</h3>
+                <h3>Analisis completos</h3>
 
                 <div id="target" class="slider">
 
                     <ul id="listaDeHabitaciones" class="flex-container">
                         <li>
-                            <img src="./fotos/camarote-1.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
+                            <img src="./fotos/im.2.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
                         </li>
                         <li>
-                            <img src="./fotos/camarote-2.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
+                            <img src="./fotos/im.2.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
                         </li>
                         <li>
-                            <img src="./fotos/camarote-3.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
+                            <img src="./fotos/im.2.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
                         </li>
                         <li>
-                            <img src="./fotos/camarote-B1.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
+                            <img src="./fotos/im.2.jpg" alt="imagenDeHabitacion" class="imagenDeHabitacion">
+                        </li>
+                    </ul>
+                </div>
+
+                <p id="descripcion"> De sangre, orina, eces</p>
+                <!--iconos de servicios-->
+
+                <button class="botonDeHabitacion">Ver analisis</button>
+            </div>
+            <div id="habitacionPresentacion">
+                <h3>Marcadores tumorales</h3>
+
+                <div id="target" class="slider">
+
+                    <ul id="listaDeHabitaciones" class="flex-container">
+                        <li>
+                            <img src="./fotos/im.4.png" alt="imagenDeHabitacion" class="imagenDeHabitacion">
+                        </li>
+                        <li>
+                            <img src="./fotos/im.4.png" alt="imagenDeHabitacion" class="imagenDeHabitacion">
+                        </li>
+                        <li>
+                            <img src="./fotos/im.4.png" alt="imagenDeHabitacion" class="imagenDeHabitacion">
+                        </li>
+                        <li>
+                            <img src="./fotos/im.4.png" alt="imagenDeHabitacion" class="imagenDeHabitacion">
                         </li>
 
                     </ul>
                 </div>
 
-                <p id="descripcion"> Habitacion camarote, con baño privado, super acogedor</p>
+                <p id="descripcion"> Marcadores</p>
                 <!--iconos de servicios-->
-                <div id="servicios">
 
-                </div>
-                <button class="botonDeHabitacion">Ir a ver</button>
+                <button class="botonDeHabitacion">Ver analisis</button>
             </div>
+
 
         </div>
-
-
 
 
 
@@ -278,7 +242,7 @@
 
 
 
-    <!--Como llegar-->
+    <!--Ubicacion-->
 
     <div id="ubicacion">
         <div class="flex-container" id="tituloUbicacion">
@@ -288,17 +252,18 @@
         <div class="flex-container" id="ubicador">
 
             <div class="flex-container" id="descricionUbicacion">
-                <h3 style="font-weight: 600;font-family: 'Abril Fatface', serif; color:#025E73;">Calle matara 250</h3>
-                <p>A 3 cuadras de la plaza mayor de Cusco, con una vista panoramica de la ciudad</p>
-                <img src="./fotos/ingreso-1.jpg" alt="ingreso" id="imagenDeIngreso" style="border-radius: 19px;">
+                <h3 style="font-weight: 600;font-family: 'Abril Fatface', serif; color:#9A80BF;">M Carrasco</h3>
+                <p>Justo al frente del hospital Regional de Cusco</p>
+                <img src="./imagenes/ingreso-ubicacion.png" alt="ingreso" id="imagenDeIngreso"
+                    style="border-radius: 19px;">
             </div>
 
             <div id="MapaDeUbicacion">
 
-                <h3 style="font-family: 'Abril Fatface', serif; color:#F2A71B;">Google Maps</h3>
+                <h3 style="font-family: 'Abril Fatface', serif; color:#9A80BF;">Google Maps</h3>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.45249547062687!2d-71.97966866879953!3d-13.520862220315417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd675b19214d5%3A0xd9d6e3d5bdff1be2!2sHospedaje%20Familiar%20Gloria!5e0!3m2!1ses!2spe!4v1704889070813!5m2!1ses!2spe"
-                    width="490rem" height="400rem" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d304.6390555574865!2d-71.95607059992989!3d-13.524796210930946!3m2!1i1024!2i768!4f13.1!2m1!1sbiolab%20cusco!5e1!3m2!1ses!2spe!4v1704935631520!5m2!1ses!2spe"
+                    width="450rem" height="400rem" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -317,32 +282,34 @@
         <div class="flex-container" id="contenedorPersonas">
 
             <div class="flex-container" id="personaTargetaExperiencia">
-                <h4 style="font-weight: 500; font-family: 'Abril Fatface', serif; color:#F2A71B;">Benjamin</h4>
+                <h4 style="font-weight: 500; font-family: 'Abril Fatface', serif; color:#9A80BF;">Martín Flores</h4>
                 <p>Septiembre 2021</p>
                 <img src="./fotos/persona 1.jpg" alt="foto"
                     style="width: 6.5rem; height: 6.5rem; padding: 0 0 0.5rem 0">
-                <h5 style="font-family: 'Abril Fatface', serif; color:#F2A71B;">Comentario</h5>
-                <p>The view is great and the management was very easy to contact while being eager to help out. The
-                    location is perfect for being close to plaza de Armas without it being quite so busy.</p>
+                <h5 style="font-family: 'Abril Fatface', serif; color:#9A80BF;">Comentario</h5>
+                <p>El laboratorio clínico destaca por su rapidez y precisión en la entrega de resultados, crucial para
+                    tratamientos médicos. El personal amable genera confianza, ofreciendo un servicio cálido. Además, la
+                    avanzada tecnología garantiza análisis fiables, marcando la pauta en atención y precisión.</p>
             </div>
             <div class="flex-container" id="personaTargetaExperiencia">
-                <h4 style="font-weight: 500; font-family: 'Abril Fatface', serif; color:#F2A71B;">Jc</h4>
+                <h4 style="font-weight: 500; font-family: 'Abril Fatface', serif; color:#9A80BF;">María Rodríguez</h4>
                 <p>Febrero 2020</p>
                 <img src="./fotos/persona 2.jpg" alt="foto" style="width: 4rem; height: 6.5rem; padding: 0 0 0.5rem 0">
-                <h5 style="font-family: 'Abril Fatface', serif; color:#F2A71B;">Comentario</h5>
-                <p>Chambre avec salle de bain et un balcon terrasse avec vue sur la ville Lit confortable Bien situé au
-                    centre du quartier historique</p>
+                <h5 style="font-family: 'Abril Fatface', serif; color:#9A80BF;">Comentario</h5>
+                <p>Atención humana: El personal del laboratorio clínico ofrece un servicio amable y comprensivo,
+                    generando un ambiente de confianza que tranquiliza a los pacientes durante el proceso de análisis.
+                </p>
             </div>
             <div class="flex-container ultimaPersona" id="personaTargetaExperiencia">
-                <h4 style="font-weight: 500; font-family: 'Abril Fatface', serif; color:#F2A71B;">Kevin</h4>
+                <h4 style="font-weight: 500; font-family: 'Abril Fatface', serif; color:#9A80BF;">Alejandro González
+                </h4>
                 <p>Agosto 2017</p>
                 <img src="./fotos/persona 3.jpg" alt="foto"
                     style="width: 6.5rem; height: 6.5rem; padding: 0 0 0.5rem 0">
-                <h5 style="font-family: 'Abril Fatface', serif; color:#F2A71B;">Comentario</h5>
-                <p>Very nice and helpful host (Gloria). The room was clean and the bathroom was big and has warm water.
-                    Wifi was fast. Nice view of the city from the balcony. Excellent city location, but can be a little
-                    hard to find for the taxi driver (no sign from the street). Close to the most important things in
-                    the city. A supermarket just across the road.</p>
+                <h5 style="font-family: 'Abril Fatface', serif; color:#9A80BF;">Comentario</h5>
+                <p>Confidencialidad garantizada: El laboratorio clínico se destaca por su estricto cumplimiento de
+                    normas éticas, asegurando la confidencialidad de los resultados, priorizando la privacidad y
+                    tranquilidad de los pacientes.</p>
             </div>
         </div>
 
@@ -353,7 +320,11 @@
     <!--pie de pagina-->
     <footer>
         <div class="flex-container" id="pieDPagina">
-            <img src="./imagenes/logo.png" alt="logo" id="logo">
+
+            <div>
+                <img src="./imagenes/logo.png" alt="logo" id="logo">
+            </div>
+
 
             <div class="flex-container" id="pieDPaginaContactos">
 
@@ -370,7 +341,7 @@
                 </div>
 
             </div>
-            <p style="font-family: 'Abril Fatface', serif;">&copy; Copyright Hospedaje Familiar Gloria 20204</p>
+            <p style="font-family: 'Abril Fatface', serif;">&copy; Copyright BIOLAB salud 2024</p>
         </div>
 
     </footer>

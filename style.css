@@ -19,17 +19,94 @@ header {
 }
 
 #logo {
-    height: 90px;
-    width: 100px;
+    height: 9rem;
+    width: 9rem;
 }
+
+
+/********************************quienes somos*******************************/
+
+#tituloQuienesSomos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#tituloQuienesSomos h2{
+    font-family: 'Abril Fatface', serif;
+    font-size: 3rem;
+    color: #9A80BF;
+}
+
+#contenedorQuienesSomos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 6rem 2rem 6rem;
+    color: #9A80BF;
+}
+
+#contenedorQuienesSomos h3{
+font-size: 2rem;
+font-weight: 800;
+}
+
+#contenedorQuienesSomos img{
+    width: 25rem;
+    height: 25rem;
+    margin: 3rem;
+}
+
+#presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 30rem;
+}
+
+#target {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.slider2 ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+    padding: 0;
+    overflow: hidden;
+
+
+}
+
+.slider2 li {
+    width: 100%;
+    list-style: none;
+
+}
+
+.slider2 img {
+    width: 100%;
+    height: 25rem;
+
+    padding: 0 .01rem 0 .01rem;
+}
+
 
 /**************************encabezado****************************/
 #encabezadoLinks {
-    margin: 0 6rem 2rem 6rem;
+    margin: 0 6rem .5rem 6rem;
     padding: 3rem 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    color: #9A80BF;
 }
 
 #listaDeNombres {
@@ -51,7 +128,7 @@ header {
     flex-direction: column;
 
 
-    background-image: url('./fotos/imagenLargaHero.jpg');
+    background-image: url('./imagenes/fondoDePantalla2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,7 +146,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #025e7391;
+    background-color: #8fc4d9c2;
     /* Color rojo transparente */
     z-index: 1;
     /* Poner la capa detrás de la imagen, pero encima del contenido */
@@ -80,11 +157,13 @@ header {
 #fotoPrin>h1 {
 
     font-family: 'Abril Fatface', serif;
-    font-size: 6rem;
+    font-size: 5.5rem;
     font-weight: 400;
     z-index: 2;
+    justify-content: center;
+    text-align: center;
 
-    color: #F2A71B;
+    color: #9A80BF;
 }
 
 #fotoPrin>p,
@@ -113,7 +192,7 @@ header {
 
 #fotoPrin>button {
     border: 1px solid;
-    background-color: #f2a71bad;
+    background-color: #9A80BF;
     padding: 0.5rem;
     border-radius: 19px;
 }
@@ -125,7 +204,7 @@ header {
     text-align: center;
     font-size: 3rem;
     font-family: 'Abril Fatface', serif;
-    color: #F2A71B;
+    color: #8FC4D9;
 
 
     margin: 0 0 2rem 0;
@@ -133,7 +212,7 @@ header {
 }
 
 #habitaciones {
-    background-color: #025E73;
+    background-color:#9A80BF;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,8 +241,10 @@ header {
     margin: 0 1rem 1rem 1rem;
     padding: 1rem 0 rem 0;
 
-    height: 30rem;
-    width: 30rem;
+    height: 35rem;
+    width: 25rem;
+
+    color: #8FC4D9;
 
 }
 
@@ -197,9 +278,13 @@ header {
 
 .slider img {
     width: 100%;
-    height: 20rem;
+    height: 25rem;
 
     padding: 0 .01rem 0 .01rem;
+}
+
+.slider p{
+    font-size: 2rem;
 }
 
 
@@ -249,13 +334,16 @@ header {
 }
 
 .botonDeHabitacion {
-    border: solid 3px #F2A71B;
-    background-color: rgba(0, 0, 0, 0.082);
+    border: solid 3px #9A80BF;
+    background-color: rgba(0, 0, 0, 0.192);
     border-radius: 19px;
     width: 80%;
+    color: #8FC4D9;
 
     margin: 1rem 1rem 1rem 1rem;
 }
+
+
 
 
 /*****************************Ubicacion****************************/
@@ -294,7 +382,7 @@ header {
 #tituloUbicacion>h3 {
     font-size: 3rem;
     font-family: 'Abril Fatface', serif;
-    color: #025E73;
+    color: #9A80BF;
 }
 
 
@@ -315,7 +403,7 @@ header {
 
 #experienciasCajaGrande {
 
-    background-color: #025E73;
+    background-color: #8FC4D9;
     
     width: 100%;
     height: 100%;
@@ -338,7 +426,7 @@ header {
     font-size: 3rem;
     font-weight: 400;
     font-family: 'Abril Fatface', serif;
-    color: #F2A71B;
+    color: #9A80BF;
 
     padding: 0 0 1rem 0;
 
@@ -382,6 +470,9 @@ header {
 
 
 #pieDPagina {
+
+    display: flex;
+    flex-direction: row;
     background-color: #ffffff;
     padding: 2rem;
     margin: 0;
@@ -391,9 +482,10 @@ header {
     text-align: center;
     justify-content: center;
 
-    color: #025E73;
+    color: #9A80BF;
 
     font-size: 1.5rem;
+    gap: 5rem;
 
 }
 
@@ -405,6 +497,25 @@ header {
 
     padding: 0 0 1rem 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -505,11 +616,11 @@ header {
         padding: 2rem;
         margin: 0 2.5rem 2rem 2.5rem;
         position: relative;
-        background-image: url('./fotos/imagenLargaHero.jpg');
+        background-image: url('./imagenes/fondoDePantalla2.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 300px;
+        height: 250px;
 
         z-index: 1;
     }
@@ -544,6 +655,8 @@ header {
 
         align-items: center;
         justify-content: center;
+
+
     }
 
     #siguenos>li {
@@ -554,7 +667,7 @@ header {
 
     #fotoPrin>button {
         border: 1px solid;
-        background-color: rgba(185, 172, 51, 0.63);
+        background-color: #9A80BF;
         padding: 0.2rem;
         border-radius: 19px;
         font-size: 0.8rem;
@@ -562,8 +675,11 @@ header {
         margin: 0 0 1rem 0;
     }
 
+   
+
     #habitacionPresentacion {
         width: 21rem;
+        height: 34rem;
     }
 
 
@@ -599,7 +715,7 @@ header {
     /*****************************Ubicacion****************************/
 
     #ubicacion {
-        background-color: rgba(179, 87, 34, 0.486);
+        background-color: rgba(255, 255, 255, 0.486);
         padding: 0 0 3rem 0;
     }
 
@@ -620,11 +736,11 @@ header {
         text-align: center;
         align-items: center;
         background-color: rgba(255, 255, 255, 0.192);
-        margin: 0 0 2rem 0;
+        margin: 1rem 0 1rem 0;
     }
 
     #tituloUbicacion>h3 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     #descricionUbicacion p {
@@ -657,7 +773,7 @@ header {
     /****************************experiencias****************************/
 
     #experienciasCajaGrande {
-        background-color: bisque;
+        background-color: #8FC4D9;
 
         padding: 0 0 2rem 0;
     }
@@ -670,9 +786,10 @@ header {
     }
 
     #tituloExperiencias h3 {
-        font-size: 3rem;
+        font-size: 2.4rem;
         font-weight: 400;
-        background-color: rgba(255, 255, 255, 0.205);
+        padding: 0.5rem;
+    
 
     }
 
@@ -703,10 +820,10 @@ header {
         align-items: center;
         text-align: center;
 
-        padding: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
 
         width: 20rem;
-        height: 23rem;
+        height: 27rem;
 
         overflow: hidden;
 
@@ -722,25 +839,31 @@ header {
     /*********************pie de pagina*************************/
 
     #pieDPagina {
-        background-color: rgb(25, 117, 117);
-        padding: 2rem;
-        margin: 0;
 
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        padding: 1rem;
+        margin: 0;
+        font-family: 'Abril Fatface', serif;
+    
         align-items: center;
         text-align: center;
         justify-content: center;
-
+    
+        color: #9A80BF;
+    
         font-size: 1rem;
-
+        gap: 1rem;
+    
     }
-
+    
     #iconos {
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 1rem;
-
+    
         padding: 0 0 1rem 0;
     }
-
-}
+    
