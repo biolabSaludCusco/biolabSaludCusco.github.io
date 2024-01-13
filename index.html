@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./bootstrap.bundle.min.js">
     <link rel="stylesheet" href="./bootstrap.min.css">
 
+    <!--animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <script src="./script.js" defer></script>
 
     <!--donde van los estilos de letra-->
@@ -59,25 +62,34 @@
 
                     <li>
                         <span class="material-symbols-outlined" style="text-decoration: none;"><a href="#fotoPrin"
-                                style="text-decoration: none; color: #9A80BF;">Inicio</a></span>
+                                style="text-decoration: none; color: #9A80BF;"
+                                id="direccionesEncabezado">Inicio</a></span>
                     </li>
                     <li>
                         <span class="material-symbols-outlined" style="text-decoration: none;"><a href="#quienesSomos"
-                            style="text-decoration: none; color: #9A80BF;">Quienes somos</a></span>
+                                style="text-decoration: none; color: #9A80BF;" id="direccionesEncabezado">Quienes
+                                somos</a></span>
                     </li>
                     <li>
                         <span class="material-symbols-outlined" style="text-decoration: none;"><a href="#ubicacion"
-                                style="text-decoration: none; color: #9A80BF;">Ubicacion</a></span>
+                                style="text-decoration: none; color: #9A80BF;"
+                                id="direccionesEncabezado">Ubicacion</a></span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined" style="text-decoration: none;"><a href="#ubicacion"
+                                style="text-decoration: none; color: #9A80BF;"
+                                id="direccionesEncabezado">Examenes</a></span>
                     </li>
                     <li>
                         <span class="material-symbols-outlined" style="text-decoration: none;"><a
-                                href="#tituloExperiencias"
-                                style="text-decoration: none; color: #9A80BF;">Experiencias</a></span>
+                                href="#experienciasCajaGrande" style="text-decoration: none; color: #9A80BF;"
+                                id="direccionesEncabezado">Experiencias</a></span>
                     </li>
                     <li>
                         <span class="material-symbols-outlined" style="text-decoration: none;"><a
                                 href="https://api.whatsapp.com/send?phone=952840633"
-                                style="text-decoration: none; color: #9A80BF;">Contactar</a></span>
+                                style="text-decoration: none; color: #9A80BF;" id="direccionesEncabezado"
+                                target="_blank">Contactar</a></span>
                     </li>
                 </ul>
             </nav>
@@ -88,14 +100,23 @@
         <!--encabezado- imagen principal-->
         <div id="fotoPrin">
 
-            <h1>Biolab Salud Cusco </h1>
+            <h1 class="animate__animated animate__bounce">Biolab Salud Cusco </h1>
             <p style="font-family: 'Abril Fatface', serif; color: white;">laboratorio de confianza</p>
-            <button style="font-family: 'Abril Fatface', serif; color:#8FC4D9;">Contactanos</button>
+
+            <button class="animate__animated animate__backInLeft " id="botonContactanos"
+                style="font-family: 'Abril Fatface', serif; color:#8FC4D9;"><a
+                    href="https://api.whatsapp.com/send?phone=952840633" target="_blank"
+                    style="text-decoration: none; color: inherit;">Contactanos</a></button>
 
             <ul class="flex-container nav-list" id="siguenos">
                 <p style="font-family: 'Abril Fatface', serif; color: white;">Siguenos en</p>
-                <li><img src="./imagenes/instagram.png" alt="instagram" style="height: 2rem; width: 2rem;"></li>
-                <li><img src="./imagenes/facebook.png" alt="facebook" style="height: 2rem; width: 2rem;"></li>
+                <li><a id="linkArriva" href="#" target="_blank"><img src="./imagenes/instagram.png" alt="instagram"
+                            style="height: 2rem; width: 2rem;"></a></li>
+                <li><a id="linkArriva" href="https://www.facebook.com/BiolabSaludCusco" target="_blank"><img
+                            src="./imagenes/facebook.png" alt="facebook" style="height: 2rem; width: 2rem;"></a></li>
+                <li><a id="linkArriva" href="https://api.whatsapp.com/send?phone=952840633" target="_blank"><img
+                            src="./imagenes/whatsapp.png" alt="facebook" style="height: 2rem; width: 2rem;"></a></li>
+
             </ul>
 
         </div>
@@ -106,15 +127,16 @@
     <!--Quienes somos-->
     <div class="flex-container" id="quienesSomos">
         <div class="flex-container" id="tituloQuienesSomos">
-            <h2>Quienes somos</h2>
+            <h2 class="animate__animated animate__bounce">Quienes somos</h2>
         </div>
         <div class="flex-container" id="contenedorQuienesSomos">
-            <div class="flex-container" id="presentacion">
-                <h3>Solange Chacon T.</h3>
+
+            <div class="flex-container animate__animated animate__backInLeft" id="presentacion">
+                <h3>Solange Chacon Terrazas</h3>
                 <p>Medico tecnologa, egresada con honores de la prestigiosa Universidad Peruana Cayetano Heredia </p>
                 <p>Cumplimos con los requisitos mas altos de calidad y certificados de salud</p>
 
-                <div id="cetificadosDeSalud">
+                <div class="flex-container" id="cetificadosDeSalud">
                     <div id="target" class="slider2">
 
                         <ul id="listaDeHabitaciones" class="flex-container">
@@ -136,7 +158,8 @@
                 </div>
             </div>
 
-            <img src="./fotos/fotoDePerfil.jpg" alt="fotoDePerfil">
+            <img id="imagenDePerfil" class="animate__animated animate__backInRight" src="./fotos/fotoDePerfil.jpg"
+                alt="fotoDePerfil" style="border-radius: 19px; box-shadow: 0px 10px 10px #0000007c;">
         </div>
     </div>
 
@@ -145,11 +168,11 @@
 
     <div id="habitaciones" class="flex-container">
 
-        <h1 id="tituloHabitaciones">Examenes</h1>
+        <h1 class="animate__animated animate__bounce" id="tituloHabitaciones">Examenes</h1>
 
 
 
-        <div id="carruselDeImagenes" class="flex-container">
+        <div class="animate__animated animate__fadeInUp" id="carruselDeImagenes" class="flex-container">
 
             <div id="habitacionPresentacion">
                 <h3>Descartes</h3>
@@ -246,13 +269,13 @@
 
     <div id="ubicacion">
         <div class="flex-container" id="tituloUbicacion">
-            <h3>Ubicanos en</h3>
+            <h3 class="animate__animated animate__bounce">Ubicanos en</h3>
         </div>
 
-        <div class="flex-container" id="ubicador">
+        <div class="flex-container animate__animated animate__backInLeft" id="ubicador">
 
             <div class="flex-container" id="descricionUbicacion">
-                <h3 style="font-weight: 600;font-family: 'Abril Fatface', serif; color:#9A80BF;">M Carrasco</h3>
+                <h3 style="font-weight: 600;font-family: 'Abril Fatface', serif; color:#9A80BF;">M. Carrasco</h3>
                 <p>Justo al frente del hospital Regional de Cusco</p>
                 <img src="./imagenes/ingreso-ubicacion.png" alt="ingreso" id="imagenDeIngreso"
                     style="border-radius: 19px;">
@@ -261,7 +284,7 @@
             <div id="MapaDeUbicacion">
 
                 <h3 style="font-family: 'Abril Fatface', serif; color:#9A80BF;">Google Maps</h3>
-                <iframe
+                <iframe class="animate__animated animate__backInRight"
                     src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d304.6390555574865!2d-71.95607059992989!3d-13.524796210930946!3m2!1i1024!2i768!4f13.1!2m1!1sbiolab%20cusco!5e1!3m2!1ses!2spe!4v1704935631520!5m2!1ses!2spe"
                     width="450rem" height="400rem" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -276,10 +299,10 @@
     <div class="flex-container" id="experienciasCajaGrande">
 
         <div class="flex-container" id="tituloExperiencias">
-            <h3>Experiencias</h3>
+            <h3 class="flex-container animate__animated animate__bounce">Experiencias</h3>
         </div>
 
-        <div class="flex-container" id="contenedorPersonas">
+        <div class="flex-container animate__animated animate__fadeInUp" id="contenedorPersonas">
 
             <div class="flex-container" id="personaTargetaExperiencia">
                 <h4 style="font-weight: 500; font-family: 'Abril Fatface', serif; color:#9A80BF;">Martín Flores</h4>
@@ -332,12 +355,16 @@
                 <p style="font-family: 'Abril Fatface', serif;">Contactos</p>
 
                 <div class="flex-container" id="iconos">
-                    <img src="./imagenes/whatsapp.png" alt="wahsaap" id="logoWhasapp" style="height: 2rem;
-                    width: 2rem;">
-                    <img src="./imagenes/gmail.png" alt="wahsaap" id="logoGmail" style="height: 2rem;
-                    width: 2rem;">
-                    <img src="./imagenes/facebook.png" alt="wahsaap" id="logoLikedIn" style="height: 2rem;
-                    width: 2rem;">
+                    <ul class="flex-container nav-list" id="siguenos">
+                        <li><a id="linkArriva" href="#" target="_blank"><img src="./imagenes/instagram.png"
+                                    alt="instagram" style="height: 2rem; width: 2rem;"></a></li>
+                        <li><a id="linkArriva" href="https://www.facebook.com/BiolabSaludCusco" target="_blank"><img
+                                    src="./imagenes/facebook.png" alt="facebook" style="height: 2rem; width: 2rem;"></a>
+                        </li>
+                        <li><a id="linkArriva" href="https://api.whatsapp.com/send?phone=952840633" target="_blank"><img
+                                    src="./imagenes/whatsapp.png" alt="facebook" style="height: 2rem; width: 2rem;"></a>
+                        </li>
+                    </ul>
                 </div>
 
             </div>

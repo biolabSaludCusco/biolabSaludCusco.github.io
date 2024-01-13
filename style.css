@@ -26,19 +26,20 @@ header {
 
 /********************************quienes somos*******************************/
 
-#tituloQuienesSomos{
+#tituloQuienesSomos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-#tituloQuienesSomos h2{
+
+#tituloQuienesSomos h2 {
     font-family: 'Abril Fatface', serif;
     font-size: 3rem;
     color: #9A80BF;
 }
 
-#contenedorQuienesSomos{
+#contenedorQuienesSomos {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -47,18 +48,18 @@ header {
     color: #9A80BF;
 }
 
-#contenedorQuienesSomos h3{
-font-size: 2rem;
-font-weight: 800;
+#contenedorQuienesSomos h3 {
+    font-size: 2rem;
+    font-weight: 800;
 }
 
-#contenedorQuienesSomos img{
+#contenedorQuienesSomos img {
     width: 25rem;
     height: 25rem;
     margin: 3rem;
 }
 
-#presentacion{
+#presentacion {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,6 +198,110 @@ font-weight: 800;
     border-radius: 19px;
 }
 
+#descricionUbicacion>img {
+    box-shadow: 0px 15px 15px #00000033;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*titulo principal*/
+
+/*boton de encabezado contactanos*/
+#fotoPrin>button:hover {
+    box-shadow: 0px 10px 10px #9a80bf;
+    transition: .5s, color .15s;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    border: solid 1px #9a80bf6c;
+    border-radius: 19px;
+    background-color: transparent;
+}
+
+#fotoPrin>h1:hover {
+    font-size: 7rem;
+    transition: .5s, color .15s;
+}
+
+/*encabezado direcciones*/
+#direccionesEncabezado:hover {
+    box-shadow: 0px 10px 10px #9a80bfb2;
+    transition: .5s, color .15s;
+
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    border: solid 1px #9a80bf6c;
+    border-radius: 19px;
+    background-color: transparent;
+}
+
+/*examenes targetas*/
+#habitacionPresentacion:hover {
+    box-shadow: 0px 5px 5px #8FC4D9;
+    border: solid 2px #8fc4d9;
+}
+
+/*boton de las targetas de examenes*/
+.botonDeHabitacion:hover {
+    box-shadow: 0px 5px 5px #00000077;
+    border: 0;
+    background-color: #8FC4D9;
+    color: #9A80BF;
+}
+
+/*ubicanos texto*/
+#descricionUbicacion>img:hover {
+    box-shadow: 0px 0px 15px #9a80bf;
+    border: 0;
+}
+
+/*ubicanos mapa*/
+#MapaDeUbicacion:hover {
+    box-shadow: 0px 0px 15px #9a80bf;
+    border: 0;
+}
+
+/*targetas de experiencias*/
+#personaTargetaExperiencia:hover{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.534);
+    transition: .5s, color .15s;
+
+    font-size: 1.05rem;
+    padding: 0.5rem;
+   
+    border-radius: 19px;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /******************************Habitaciones******************************/
 
@@ -212,7 +317,7 @@ font-weight: 800;
 }
 
 #habitaciones {
-    background-color:#9A80BF;
+    background-color: #9A80BF;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -283,7 +388,7 @@ font-weight: 800;
     padding: 0 .01rem 0 .01rem;
 }
 
-.slider p{
+.slider p {
     font-size: 2rem;
 }
 
@@ -404,7 +509,7 @@ font-weight: 800;
 #experienciasCajaGrande {
 
     background-color: #8FC4D9;
-    
+
     width: 100%;
     height: 100%;
 
@@ -497,6 +602,26 @@ font-weight: 800;
 
     padding: 0 0 1rem 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -647,7 +772,8 @@ font-weight: 800;
 
     #siguenos {
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
         gap: 1.5rem;
         list-style-type: none;
@@ -655,14 +781,13 @@ font-weight: 800;
 
         align-items: center;
         justify-content: center;
-
-
     }
 
     #siguenos>li {
-        width: 3rem;
-        height: 3rem;
+        width: 1rem;
+        height: 1rem;
     }
+
 
 
     #fotoPrin>button {
@@ -675,7 +800,7 @@ font-weight: 800;
         margin: 0 0 1rem 0;
     }
 
-   
+
 
     #habitacionPresentacion {
         width: 21rem;
@@ -710,6 +835,57 @@ font-weight: 800;
 
     #habitaciones {
         padding: 0 0 3rem 0;
+    }
+
+
+    /****************************quienes somos************************/
+
+    #contenedorQuienesSomos {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 0;
+        margin: 0 2rem 0 2rem;
+    }
+
+    #tituloQuienesSomos h2 {
+        font-size: 2rem;
+    }
+
+    #presentacion {
+        padding: 0 2rem 0 2rem;
+    }
+
+    #presentacion h3,
+    #presentacion p {
+        font-size: 1rem;
+        padding: 0 2rem 0 2rem;
+    }
+
+    #presentacion h3 {
+        padding: 1rem 0 0 0;
+    }
+
+    #cetificadosDeSalud {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cetificadosDeSalud {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    #contenedorQuienesSomos img {
+        width: 100%;
+        height: 100%;
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    #imagenDePerfil {
+        width: 100%;
+        height: 100%;
+        margin: 0 2rem 0 2rem;
     }
 
     /*****************************Ubicacion****************************/
@@ -789,7 +965,7 @@ font-weight: 800;
         font-size: 2.4rem;
         font-weight: 400;
         padding: 0.5rem;
-    
+
 
     }
 
@@ -846,24 +1022,24 @@ font-weight: 800;
         padding: 1rem;
         margin: 0;
         font-family: 'Abril Fatface', serif;
-    
+
         align-items: center;
         text-align: center;
         justify-content: center;
-    
+
         color: #9A80BF;
-    
+
         font-size: 1rem;
         gap: 1rem;
-    
+
     }
-    
+
     #iconos {
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 1rem;
-    
+
         padding: 0 0 1rem 0;
     }
-    
+}
