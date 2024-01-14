@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOLAB</title>
+
+    <script src="./jquery-3.7.1.min.js"></script>
+
+    <link rel="icon" href="./imagenes/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./examenes.css">
+    <link rel="stylesheet" href="./bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+
+    <!--animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="./examenes.js" defer></script>
+
+    <!--donde van los estilos de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Dosis:wght@300&family=Jura:wght@300;400&family=Playpen+Sans:wght@100&family=Rajdhani&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+
+</head>
+
+<!--contenido-->
+
+<body>
+
+    <!--hamburguesa-->
+    <header>
+
+        <div class="flex-container" id="encabezadoLinks">
+
+            <img src="./imagenes/logo.png" alt="logo" id="logo">
+
+            <!--boton abrir-->
+            <button class="abrirMenu" id="abrir"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                    fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg></button>
+
+            <nav class="nav flex-container" id="nav">
+                <ul class="nav-list" id="listaDeNombres">
+
+                    <!--boton cerrar-->
+                    <button id="botonParaCerrar"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                        </svg></button>
+
+
+                    <li>
+                        <span class="material-symbols-outlined" style="text-decoration: none;"><a href="index.html"
+                                style="text-decoration: none; color: #9A80BF;"
+                                id="direccionesEncabezado">Inicio</a></span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined" style="text-decoration: none;"><a href="#quienesSomos"
+                                style="text-decoration: none; color: #9A80BF;" id="direccionesEncabezado">Quienes
+                                somos</a></span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined" style="text-decoration: none;"><a href="#ubicacion"
+                                style="text-decoration: none; color: #9A80BF;"
+                                id="direccionesEncabezado">Ubicacion</a></span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined" style="text-decoration: none;"><a href="#ubicacion"
+                                style="text-decoration: none; color: #9A80BF;"
+                                id="direccionesEncabezado">Examenes</a></span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined" style="text-decoration: none;"><a
+                                href="#experienciasCajaGrande" style="text-decoration: none; color: #9A80BF;"
+                                id="direccionesEncabezado">Experiencias</a></span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined" style="text-decoration: none;"><a
+                                href="https://api.whatsapp.com/send?phone=952840633"
+                                style="text-decoration: none; color: #9A80BF;" id="direccionesEncabezado"
+                                target="_blank">Contactar</a></span>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+
+    </header>
+
+
+    <!--analisis-->
+    <div class="flex-container" id="tipoDeExamen">
+        <h1 class="animate__animated animate__backInLeft" id="tituloDeDescartes">DESCARTES</h1>
+        <div class="flex-container animate__animated animate__bounce" id="descartes">
+
+
+            <div class="flex-container " id="targertaDeExamen">
+                <h3>Descarte de #</h3>
+                <div>
+
+                    <!--descripcion-->
+                    <div class="flex-container parteDetexto ">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Id tenetur, doloremque vero perspiciatis</p>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--duracion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Duracion</h3>
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/tiempo.png" alt="tiempo">
+                            <p>15 minutos</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--precio-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Precio</h3>
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/precio.png" alt="tiempo">
+                            <p>$ 50.00</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--requisitos-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Requisitos</h3>
+
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/no-comer.png" alt="ayunas">
+                            <h4>Ayunas</h4>
+                        </div>
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/no-alcohol.png" alt="noAlcohol">
+                            <h4>No alcohol</h4>
+                        </div>
+                    </div>
+
+
+                    <!--boton-->
+                    <div class="flex-container parteDetexto" id="botoncito">
+                        <button><a
+                            href="https://api.whatsapp.com/send?phone=952840633&text=Buenos dias pregunto por el examen de..." target="_blank"
+                            style="text-decoration: none; color: inherit;">Reservar</a></button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="flex-container" id="targertaDeExamen">
+                <h3>Descarte de #</h3>
+                <div>
+
+                    <!--descripcion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Id tenetur, doloremque vero perspiciatis</p>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--duracion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Duracion</h3>
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/tiempo.png" alt="tiempo">
+                            <p>15 minutos</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--precio-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Precio</h3>
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/precio.png" alt="tiempo">
+                            <p>$ 50.00</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--requisitos-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Requisitos</h3>
+
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/no-comer.png" alt="ayunas">
+                            <h4>Ayunas</h4>
+                        </div>
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/no-alcohol.png" alt="noAlcohol">
+                            <h4>No alcohol</h4>
+                        </div>
+                    </div>
+
+
+                    <!--boton-->
+                    <div class="flex-container parteDetexto" id="botoncito">
+                        <button>Reservar</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="flex-container" id="targertaDeExamen">
+                <h3>Descarte de #</h3>
+                <div>
+
+                    <!--descripcion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Id tenetur, doloremque vero perspiciatis</p>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--duracion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Duracion</h3>
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/tiempo.png" alt="tiempo">
+                            <p>15 minutos</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--precio-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Precio</h3>
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/precio.png" alt="tiempo">
+                            <p>$ 50.00</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--requisitos-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Requisitos</h3>
+
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/no-comer.png" alt="ayunas">
+                            <h4>Ayunas</h4>
+                        </div>
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/no-alcohol.png" alt="noAlcohol">
+                            <h4>No alcohol</h4>
+                        </div>
+                    </div>
+
+
+                    <!--boton-->
+                    <div class="flex-container parteDetexto" id="botoncito">
+                        <button>Reservar</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="flex-container" id="targertaDeExamen">
+                <h3>Descarte de #</h3>
+                <div>
+
+                    <!--descripcion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Id tenetur, doloremque vero perspiciatis</p>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--duracion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Duracion</h3>
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/tiempo.png" alt="tiempo">
+                            <p>15 minutos</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--precio-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Precio</h3>
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/precio.png" alt="tiempo">
+                            <p>$ 50.00</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--requisitos-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Requisitos</h3>
+
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/no-comer.png" alt="ayunas">
+                            <h4>Ayunas</h4>
+                        </div>
+                        <div class="flex-container" id="dondeImagenes">
+                            <img src="./imagenes/no-alcohol.png" alt="noAlcohol">
+                            <h4>No alcohol</h4>
+                        </div>
+                    </div>
+
+
+                    <!--boton-->
+                    <div class="flex-container parteDetexto" id="botoncito">
+                        <button>Reservar</button>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <!------------------------------------------------------------->
+
+    <div class="flex-container" id="tipoDeExamen2">
+        <h1 id="tituloDeDescartes" class="animate__animated animate__backInRight">ANALISIS</h1>
+
+        <div class="flex-container animate__animated animate__bounce" id="descartes">
+
+
+            <div class="flex-container" id="targertaDeExamen2">
+                <h3>Analisis de #</h3>
+                <div>
+
+                    <!--descripcion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Id tenetur, doloremque vero perspiciatis</p>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--duracion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Duracion</h3>
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/tiempo.png" alt="tiempo">
+                            <p>15 minutos</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--precio-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Precio</h3>
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/precio.png" alt="tiempo">
+                            <p>$ 50.00</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--requisitos-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Requisitos</h3>
+
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/no-comer.png" alt="ayunas">
+                            <h4>Ayunas</h4>
+                        </div>
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/no-alcohol.png" alt="noAlcohol">
+                            <h4>No alcohol</h4>
+                        </div>
+                    </div>
+
+
+                    <!--boton-->
+                    <div class="flex-container parteDetexto" id="botoncito2">
+                        <button>Reservar</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="flex-container" id="targertaDeExamen2">
+                <h3>Analisis de #</h3>
+                <div>
+
+                    <!--descripcion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Id tenetur, doloremque vero perspiciatis</p>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--duracion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Duracion</h3>
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/tiempo.png" alt="tiempo">
+                            <p>15 minutos</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--precio-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Precio</h3>
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/precio.png" alt="tiempo">
+                            <p>$ 50.00</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--requisitos-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Requisitos</h3>
+
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/no-comer.png" alt="ayunas">
+                            <h4>Ayunas</h4>
+                        </div>
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/no-alcohol.png" alt="noAlcohol">
+                            <h4>No alcohol</h4>
+                        </div>
+                    </div>
+
+
+                    <!--boton-->
+                    <div class="flex-container parteDetexto" id="botoncito2">
+                        <button>Reservar</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="flex-container" id="targertaDeExamen2">
+                <h3>Analisis de #</h3>
+                <div>
+
+                    <!--descripcion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Id tenetur, doloremque vero perspiciatis</p>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--duracion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Duracion</h3>
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/tiempo.png" alt="tiempo">
+                            <p>15 minutos</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--precio-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Precio</h3>
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/precio.png" alt="tiempo">
+                            <p>$ 50.00</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--requisitos-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Requisitos</h3>
+
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/no-comer.png" alt="ayunas">
+                            <h4>Ayunas</h4>
+                        </div>
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/no-alcohol.png" alt="noAlcohol">
+                            <h4>No alcohol</h4>
+                        </div>
+                    </div>
+
+
+                    <!--boton-->
+                    <div class="flex-container parteDetexto" id="botoncito2">
+                        <button>Reservar</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="flex-container" id="targertaDeExamen2">
+                <h3>Analisis de #</h3>
+                <div>
+
+                    <!--descripcion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Id tenetur, doloremque vero perspiciatis</p>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--duracion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Duracion</h3>
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/tiempo.png" alt="tiempo">
+                            <p>15 minutos</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--precio-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Precio</h3>
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/precio.png" alt="tiempo">
+                            <p>$ 50.00</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--requisitos-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Requisitos</h3>
+
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/no-comer.png" alt="ayunas">
+                            <h4>Ayunas</h4>
+                        </div>
+                        <div class="flex-container" id="dondeImagenes2">
+                            <img src="./imagenes/no-alcohol.png" alt="noAlcohol">
+                            <h4>No alcohol</h4>
+                        </div>
+                    </div>
+
+
+                    <!--boton-->
+                    <div class="flex-container parteDetexto" id="botoncito2">
+                        <button>Reservar</button>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!------------------------------------------------------------->
+
+    <div class="flex-container" id="tipoDeExamen3">
+        <h1 id="tituloDeDescartes" class="animate__animated animate__backInLeft">MARCADORES</h1>
+
+        <div class="flex-container animate__animated animate__bounce" id="descartes">
+
+
+            <div class="flex-container " id="targertaDeExamen3">
+                <h3>Analisis de #</h3>
+                <div>
+
+                    <!--descripcion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Id tenetur, doloremque vero perspiciatis</p>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--duracion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Duracion</h3>
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/tiempo.png" alt="tiempo">
+                            <p>15 minutos</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--precio-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Precio</h3>
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/precio.png" alt="tiempo">
+                            <p>$ 50.00</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--requisitos-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Requisitos</h3>
+
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/no-comer.png" alt="ayunas">
+                            <h4>Ayunas</h4>
+                        </div>
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/no-alcohol.png" alt="noAlcohol">
+                            <h4>No alcohol</h4>
+                        </div>
+                    </div>
+
+
+                    <!--boton-->
+                    <div class="flex-container parteDetexto" id="botoncito3">
+                        <button>Reservar</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="flex-container" id="targertaDeExamen3">
+                <h3>Analisis de #</h3>
+                <div>
+
+                    <!--descripcion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Id tenetur, doloremque vero perspiciatis</p>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--duracion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Duracion</h3>
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/tiempo.png" alt="tiempo">
+                            <p>15 minutos</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--precio-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Precio</h3>
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/precio.png" alt="tiempo">
+                            <p>$ 50.00</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--requisitos-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Requisitos</h3>
+
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/no-comer.png" alt="ayunas">
+                            <h4>Ayunas</h4>
+                        </div>
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/no-alcohol.png" alt="noAlcohol">
+                            <h4>No alcohol</h4>
+                        </div>
+                    </div>
+
+
+                    <!--boton-->
+                    <div class="flex-container parteDetexto" id="botoncito3">
+                        <button>Reservar</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="flex-container" id="targertaDeExamen3">
+                <h3>Analisis de #</h3>
+                <div>
+
+                    <!--descripcion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Id tenetur, doloremque vero perspiciatis</p>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--duracion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Duracion</h3>
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/tiempo.png" alt="tiempo">
+                            <p>15 minutos</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--precio-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Precio</h3>
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/precio.png" alt="tiempo">
+                            <p>$ 50.00</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--requisitos-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Requisitos</h3>
+
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/no-comer.png" alt="ayunas">
+                            <h4>Ayunas</h4>
+                        </div>
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/no-alcohol.png" alt="noAlcohol">
+                            <h4>No alcohol</h4>
+                        </div>
+                    </div>
+
+
+                    <!--boton-->
+                    <div class="flex-container parteDetexto" id="botoncito3">
+                        <button>Reservar</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="flex-container" id="targertaDeExamen3">
+                <h3>Analisis de #</h3>
+                <div>
+
+                    <!--descripcion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Id tenetur, doloremque vero perspiciatis</p>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--duracion-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Duracion</h3>
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/tiempo.png" alt="tiempo">
+                            <p>15 minutos</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--precio-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Precio</h3>
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/precio.png" alt="tiempo">
+                            <p>$ 50.00</p>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 0 0 1rem 0;">
+
+                    <!--requisitos-->
+                    <div class="flex-container parteDetexto">
+                        <h3>Requisitos</h3>
+
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/no-comer.png" alt="ayunas">
+                            <h4>Ayunas</h4>
+                        </div>
+                        <div class="flex-container" id="dondeImagenes3">
+                            <img src="./imagenes/no-alcohol.png" alt="noAlcohol">
+                            <h4>No alcohol</h4>
+                        </div>
+                    </div>
+
+
+                    <!--boton-->
+                    <div class="flex-container parteDetexto" id="botoncito3">
+                        <button>Reservar</button>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <!--pie de pagina-->
+    <footer>
+        <div class="flex-container" id="pieDPagina">
+
+            <div>
+                <img src="./imagenes/logo.png" alt="logo" id="logo">
+            </div>
+
+
+            <div class="flex-container" id="pieDPaginaContactos">
+
+
+                <p style="font-family: 'Abril Fatface', serif;">Contactos</p>
+
+                <div class="flex-container" id="iconos">
+                    <ul class="flex-container nav-list" id="siguenos">
+                        <li><a id="linkArriva" href="#" target="_blank"><img src="./imagenes/instagram.png"
+                                    alt="instagram" style="height: 2rem; width: 2rem;"></a></li>
+                        <li><a id="linkArriva" href="https://www.facebook.com/BiolabSaludCusco" target="_blank"><img
+                                    src="./imagenes/facebook.png" alt="facebook" style="height: 2rem; width: 2rem;"></a>
+                        </li>
+                        <li><a id="linkArriva" href="https://api.whatsapp.com/send?phone=952840633" target="_blank"><img
+                                    src="./imagenes/whatsapp.png" alt="facebook" style="height: 2rem; width: 2rem;"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <p style="font-family: 'Abril Fatface', serif;">&copy; Copyright BIOLAB salud 2024</p>
+        </div>
+
+    </footer>
+
+</body>
+
+
+</html>

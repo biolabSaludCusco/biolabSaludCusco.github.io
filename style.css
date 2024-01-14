@@ -192,8 +192,9 @@ header {
 }
 
 #fotoPrin>button {
-    border: 1px solid;
+    border: 1px solid #9568d483;
     background-color: #9A80BF;
+    color: #ffffff;
     padding: 0.5rem;
     border-radius: 19px;
 }
@@ -221,6 +222,7 @@ header {
     box-shadow: 0px 10px 10px #9a80bf;
     transition: .5s, color .15s;
     font-size: 1.8rem;
+    color: #9A80BF;
     padding: 0.5rem;
     border: solid 1px #9a80bf6c;
     border-radius: 19px;
@@ -246,7 +248,7 @@ header {
 
 /*examenes targetas*/
 #habitacionPresentacion:hover {
-    box-shadow: 0px 5px 5px #8FC4D9;
+    box-shadow: 0px 10px 10px #00000065;
     border: solid 2px #8fc4d9;
 }
 
