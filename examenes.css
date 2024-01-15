@@ -656,6 +656,11 @@ header {
         z-index: 2;
     }
 
+
+
+
+
+    
     #listaDeNombres {
         list-style-type: none;
         display: flex;
@@ -796,7 +801,7 @@ header {
     #descartes {
         display: flex;
         flex-direction: column;
-        padding: 1rem 7rem 1rem 7rem;
+        padding: 1rem 1rem 1rem 1rem;
     }
 
     /*targeta*/
@@ -806,7 +811,7 @@ header {
 
         color: #ffffff;
 
-        width: 100%;
+        width: 90%;
         height: 41rem;
 
         border-radius: 25px;
@@ -821,7 +826,7 @@ header {
 
         color: #9a80bf;
 
-        width: 100%;
+        width: 90%;
         height: 40rem;
 
         border-radius: 25px;
@@ -835,7 +840,7 @@ header {
 
         color: #ffffff;
 
-        width: 100%;
+        width: 90%;
         height: 40rem;
 
         border-radius: 25px;

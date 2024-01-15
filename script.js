@@ -3,6 +3,8 @@ const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#botonParaCerrar");
 
 
+
+
 abrir.addEventListener("click", () => {
     nav.classList.add("visible");
 });
@@ -11,4 +13,3 @@ abrir.addEventListener("click", () => {
 cerrar.addEventListener("click", function() {
     nav.classList.remove("visible");
 });
-
