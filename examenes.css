@@ -170,9 +170,11 @@ header {
     background-color: #8FC4D9;
     color: #ffffff;
 }
+
 #tipoDeExamen2 {
     color: #9A80BF;
 }
+
 #tipoDeExamen3 {
     background-color: #9A80BF;
     color: #ffffff;
@@ -182,7 +184,7 @@ header {
 
 
 /*titulo de descartes*/
-#tituloDeDescartes{
+#tituloDeDescartes {
     display: flex;
     flex-direction: row;
 
@@ -206,12 +208,14 @@ header {
     font-weight: 600;
     text-align: center;
 }
+
 #targertaDeExamen2>h3 {
     font-family: 'Abril Fatface', serif;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
 }
+
 #targertaDeExamen3>h3 {
     font-family: 'Abril Fatface', serif;
     font-size: 2rem;
@@ -237,6 +241,7 @@ header {
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.164);
 
 }
+
 #targertaDeExamen2 {
     margin: 1rem;
     padding: 1.5rem;
@@ -250,7 +255,8 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.253);
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.164);
 }
-#targertaDeExamen3{
+
+#targertaDeExamen3 {
     margin: 1rem;
     padding: 1.5rem;
 
@@ -278,11 +284,13 @@ header {
     margin: 0 1.3rem 0 0;
     filter: brightness(0) invert(1);
 }
+
 #dondeImagenes2>img {
     height: 2rem;
     width: 2rem;
     margin: 0 1.3rem 0 0;
 }
+
 #dondeImagenes3>img {
     height: 2rem;
     width: 2rem;
@@ -303,12 +311,14 @@ header {
     margin: 0.5rem 0 0.5rem 0;
 
 }
+
 #dondeImagenes2 {
     display: flex;
     flex-direction: row;
     margin: 0.5rem 0 0.5rem 0;
 
 }
+
 #dondeImagenes3 {
     display: flex;
     flex-direction: row;
@@ -345,6 +355,7 @@ header {
 
     margin: 1rem 0 0 0;
 }
+
 #botoncito2>button {
     color: #9A80BF;
     background-color: transparent;
@@ -358,6 +369,7 @@ header {
 
     margin: 1rem 0 0 0;
 }
+
 #botoncito3>button {
     color: #ffffff;
     background-color: transparent;
@@ -493,12 +505,15 @@ header {
 }
 
 /*targetas de examenes*/
-#targertaDeExamen:hover, #targertaDeExamen2:hover, #targertaDeExamen3:hover{
+#targertaDeExamen:hover,
+#targertaDeExamen2:hover,
+#targertaDeExamen3:hover {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.534);
     transition: .5s, color .15s;
 }
 
-#botoncito>button:hover, #botoncito2>button:hover{
+#botoncito>button:hover,
+#botoncito2>button:hover {
     box-shadow: 0px 10px 10px #9a80bf;
     transition: .5s, color .15s;
     font-size: 1.5rem;
@@ -509,7 +524,7 @@ header {
     background-color: #9A80BF;
 }
 
-#botoncito3>button:hover{
+#botoncito3>button:hover {
     box-shadow: 0px 10px 10px #ffffff;
     transition: .5s, color .15s;
     font-size: 1.5rem;
@@ -771,5 +786,61 @@ header {
         gap: 1rem;
 
         padding: 0 0 1rem 0;
+    }
+
+
+
+
+
+    /*recta de examenes*/
+    #descartes {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 7rem 1rem 7rem;
+    }
+
+    /*targeta*/
+    #targertaDeExamen {
+        margin: 1rem;
+        padding: 1.5rem;
+
+        color: #ffffff;
+
+        width: 100%;
+        height: 41rem;
+
+        border-radius: 25px;
+        border: 1px solid rgba(0, 0, 0, 0.253);
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.164);
+
+    }
+
+    #targertaDeExamen2 {
+        margin: 1rem;
+        padding: 1.5rem;
+
+        color: #9a80bf;
+
+        width: 100%;
+        height: 40rem;
+
+        border-radius: 25px;
+        border: 1px solid rgba(0, 0, 0, 0.253);
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.164);
+    }
+
+    #targertaDeExamen3 {
+        margin: 1rem;
+        padding: 1.5rem;
+
+        color: #ffffff;
+
+        width: 100%;
+        height: 40rem;
+
+        border-radius: 25px;
+        border: 1px solid rgba(0, 0, 0, 0.253);
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.164);
+
     }
 }
